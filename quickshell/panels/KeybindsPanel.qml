@@ -64,7 +64,7 @@ PanelWindow {
                 }
 
                 Text {
-                    text: "NixML4W"
+                    text: "Nix4P"
 
                     color: Theme.textMuted
 

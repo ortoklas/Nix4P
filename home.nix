@@ -10,6 +10,7 @@
     ./modules/hyprland.nix
     ./modules/keybindings.nix
     ./modules/quickshell.nix
+    ./modules/swaync.nix
   ];
 
   home.username = "highv";

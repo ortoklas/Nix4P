@@ -1,0 +1,26 @@
+Luxury Lounge - Late Night Deep Sleep Meditation|http://188.40.109.114:8000/ices3
+Radio Paradise|http://stream-uk1.radioparadise.com/aac-320
+Adroit Jazz Underground|https://icecast.walmradio.com:8443/jazz
+Deep House Lounge|http://198.15.94.34:8006/stream
+SomaFM Groove Salad|http://ice3.somafm.com/groovesalad-128-mp3
+Jazz Radio Blues|http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3
+101 SMOOTH JAZZ|http://jking.cdnstream1.com/b22139_128mp3
+Rockabilly Radio|http://lin3.ash.fast-serv.com:6026/stream_96
+NRJ|http://185.52.127.168/fr/30001/mp3_128.mp3
+0N Smooth Jazz|https://0n-smoothjazz.radionetz.de/0n-smoothjazz.mp3
+977 Smooth Jazz|http://26183.live.streamtheworld.com:3690/977_SMOOJAZZ_SC
+61-BLUES|http://hts06.kshost.com.br:10182/
+SomaFM CliqHop IDM|https://ice3.somafm.com/cliqhop-256-mp3
+SomaFM Digitalis|https://ice4.somafm.com/digitalis-256-mp3
+SomaFM Dub Step Beyond|https://ice4.somafm.com/dubstep-256-mp3
+SomaFM Sonic Universe|https://ice4.somafm.com/sonicuniverse-128-mp3
+SomaFM Synphaera Radio|https://ice3.somafm.com/synphaera-128-aac
+SomaFM The Trip|https://ice4.somafm.com/thetrip-128-mp3
+SomaFM Underground 80s|https://ice4.somafm.com/u80s-256-mp3
+Acoustic Blues|http://79.111.14.76:8000/acousticblues
+Blues & Rock Radio|http://bluesrock.stream.laut.fm/bluesrock
+Caprice Chicago Blues|http://79.111.14.76:8000/chicagoblues
+RdMix Classic Rock 70s 80s 90s|https://cast1.torontocast.com:4610/stream
+0N Deutsch Rock|https://0n-deutschrock.radionetz.de/0n-deutschrock.aac
+Austrian Rock Radio|http://live.antenne.at/arr
+Bad Rock Radio Hard Heavy|https://radio.jump.bg:7049/live

@@ -2,3 +2,4 @@ module qs.theme
 singleton Theme 1.0 Theme.qml
 singleton PowerState 1.0 PowerState.qml
 singleton KeybindState 1.0 KeybindState.qml
+singleton NotificationState 1.0 NotificationState.qml

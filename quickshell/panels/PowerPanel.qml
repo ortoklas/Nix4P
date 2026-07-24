@@ -32,7 +32,7 @@ PanelWindow {
 
         radius: 24
 
-        color: "transparent"
+        color: "#9923233a"   // Theme.backgroundAlt at 20% opacity
 
         border.width: 1
         border.color: Theme.accentStrong

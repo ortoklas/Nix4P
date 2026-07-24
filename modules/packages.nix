@@ -13,6 +13,7 @@
 
     # File Manager
     nemo
+    yazi
 
     # Wallpaper
     waypaper
@@ -38,6 +39,9 @@
     # Audio
     pavucontrol
     playerctl
+    mpv
+    python3
+    socat
 
     # Brightness
     brightnessctl
@@ -57,5 +61,6 @@
 
     # Notifications
     swaynotificationcenter
+    libnotify
   ];
 }

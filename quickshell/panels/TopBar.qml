@@ -83,6 +83,15 @@ PanelWindow {
             NetworkButton {
             }
 
+            // RADIO
+            RadioButton {
+            }
+
+            // NOTIFICATIONS
+            NotificationButton {
+            }
+
+
             Rectangle {
                 width: 1
                 height: 22
