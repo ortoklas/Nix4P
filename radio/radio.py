@@ -117,6 +117,10 @@ def send_mpv_command(command):
 
 
 def toggle():
+    if not MPV_SOCKET.exists():
+        start_station(get_index())
+        return
+
     send_mpv_command(["cycle", "pause"])
 
 

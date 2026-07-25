@@ -17,7 +17,7 @@
       "notification-window-width": 360,
 
       "control-center-width": 360,
-      "control-center-height": 500,
+      "control-center-height": 250,
 
       "control-center-margin-top": 70,
       "control-center-margin-right": 10,

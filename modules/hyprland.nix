@@ -12,6 +12,7 @@
       #########################
 
       exec-once = [
+        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
         "awww-daemon"
         "qs --daemonize"
         "lxqt-policykit-agent"
