@@ -9,8 +9,11 @@ ShellRoot {
 
     PowerPanel {
     }
-    
+
     KeybindsPanel {
     }
-    
+
+    ClipboardPanel {
+    }
+
 }

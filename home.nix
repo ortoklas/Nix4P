@@ -10,6 +10,7 @@
     ./modules/keybindings.nix
     ./modules/quickshell.nix
     ./modules/swaync.nix
+    ./modules/clipboard.nix
   ];
 
   home.username = "highv";

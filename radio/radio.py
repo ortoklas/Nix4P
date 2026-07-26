@@ -70,7 +70,7 @@ def start_station(index):
         [
             "pkill",
             "-f",
-            "mpv.*nixml4w-radio",
+            "mpv.*Nix4P Radio",
         ],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,

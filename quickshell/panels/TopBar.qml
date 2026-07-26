@@ -14,7 +14,7 @@ PanelWindow {
         right: true
     }
 
-    implicitHeight: 64
+    implicitHeight: 44
 
     color: "transparent"
 
@@ -75,6 +75,10 @@ PanelWindow {
                 color: Theme.surfaceAlt
             }
 
+            // WEATHER
+            WeatherButton {
+            }
+
             // VOLUME
             VolumeButton {
             }
@@ -91,7 +95,6 @@ PanelWindow {
             NotificationButton {
             }
 
-
             Rectangle {
                 width: 1
                 height: 22
@@ -99,14 +102,18 @@ PanelWindow {
                 color: Theme.surfaceAlt
             }
 
+            // CLIPBOARD
+            ClipboardButton {
+            }
+
             // KEYBINDS
             KeybindsButton {
             }
-            
+
             // RELOAD QUICKSHELL
             ReloadButton {
             }
-            
+
             // POWER
             PowerButton {
             }

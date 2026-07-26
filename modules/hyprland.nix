@@ -23,7 +23,12 @@
       #########################
 
       monitor = [
+        # Active monitor configuration
         "DP-3,3840x2160@60,0x0,1.5"
+      
+        # Available alternatives:
+        # "DP-3,2560x1440@60,0x0,1"
+        # "DP-3,1920x1080@60,0x0,1"
       ];
 
       #########################
