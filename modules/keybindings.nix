@@ -20,7 +20,7 @@
       "$mod, B, exec, brave"
 
       # File Manager
-      "$mod, E, exec, dolphin"
+      "$mod, E, exec, nemo"
 
       # Close window
       "$mod, Q, killactive"

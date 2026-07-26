@@ -46,7 +46,7 @@ def notify(name):
         [
             "notify-send",
             "-a",
-            "NixML4W Radio",
+            "Nix4P Radio",
             "📻 Radio",
             name,
         ],
@@ -86,7 +86,7 @@ def start_station(index):
             "mpv",
             "--no-video",
             "--no-terminal",
-            "--title=NixML4W Radio",
+            "--title=Nix4P Radio",
             "--input-ipc-server=" + str(MPV_SOCKET),
             "--force-window=no",
             "--",

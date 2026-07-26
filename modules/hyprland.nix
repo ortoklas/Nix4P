@@ -34,7 +34,7 @@
         gaps_in = 5;
         gaps_out = 8;
 
-        border_size = 3;
+        border_size = 2;
 
         "col.active_border" = "rgba(7851a9ff)";   # Royal Purple
         "col.inactive_border" = "rgba(444444aa)";
@@ -61,7 +61,7 @@
         shadow = {
           enabled = true;
           range = 12;
-          render_power = 3;
+          render_power = 6;
         };
       };
 

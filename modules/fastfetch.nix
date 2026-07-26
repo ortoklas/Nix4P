@@ -28,7 +28,7 @@
         "cpu"
         "gpu"
         "memory"
-        "disk"
+        #"disk"
       ];
     };
   };
