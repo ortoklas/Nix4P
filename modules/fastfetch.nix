@@ -6,29 +6,85 @@
 
     settings = {
       logo = {
-        type = "builtin";
-        source = "NixOS2";
+        type = "kitty-icat";
+        source = "/home/highv/.config/home-manager/assets/nixos.svg";
+        width = 30;
+        height = 10;
+        preserveAspectRatio = true;
       };
 
       display = {
-        separator = " │ ";
+        separator = " ";
       };
 
       modules = [
-        "title"
-        "separator"
-        "os"
-        "host"
-        "kernel"
-        "uptime"
-        "packages"
-        "shell"
-        "terminal"
-        "wm"
-        "cpu"
-        "gpu"
-        "memory"
-        #"disk"
+        {
+          type = "custom";
+          format = "╭──────────────────────────────────────────────╮";
+        }
+
+        {
+          type = "title";
+          format = "│ ❯ {user-name}@{host-name}";
+        }
+
+        {
+          type = "custom";
+          format = "├──────────────────────────────────────────────┤";
+        }
+
+        {
+          type = "kernel";
+          key = "│ 󰌢";
+          keyColor = "cyan";
+        }
+
+        {
+          type = "uptime";
+          key = "│ 󰅐";
+          keyColor = "green";
+        }
+
+        {
+          type = "packages";
+          key = "│ 󰏖";
+          keyColor = "yellow";
+        }
+
+        {
+          type = "shell";
+          key = "│ 󰆍";
+          keyColor = "magenta";
+        }
+
+        {
+          type = "terminal";
+          key = "│ 󰍹";
+          keyColor = "blue";
+        }
+
+        {
+          type = "wm";
+          key = "│ ";
+          keyColor = "cyan";
+        }
+
+        {
+          type = "cpu";
+          key = "│ 󰍛";
+          keyColor = "green";
+        }
+
+        {
+          type = "memory";
+          key = "│ 󰘚";
+          keyColor = "yellow";
+        }
+
+        {
+          type = "custom";
+          format = "╰──────────────────────────────────────────────╯";
+        }
       ];
     };
   };

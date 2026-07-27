@@ -55,9 +55,15 @@ Item {
         anchors.fill: parent
 
         onClicked: {
-            Quickshell.execDetached([
-                "/home/highv/.local/bin/radio-toggle"
-            ])
+            if (root.playing) {
+                Quickshell.execDetached([
+                    "/home/highv/.local/bin/radio-toggle"
+                ])
+            } else {
+                Quickshell.execDetached([
+                    "/home/highv/.local/bin/radio-next"
+                ])
+            }
         }
 
         onWheel: event => {
