@@ -7,10 +7,10 @@ import "../theme"
 Item {
     id: root
 
-    implicitWidth: 70
+    implicitWidth: 80
     implicitHeight: 24
 
-    property string temperature: "--°F"
+    property string temperature: "--"
 
     Process {
         id: weatherProcess
@@ -21,7 +21,7 @@ Item {
 
         stdout: StdioCollector {
             onStreamFinished: {
-                root.temperature = text.trim() + "°F"
+                root.temperature = text.trim()
             }
         }
     }
@@ -31,14 +31,10 @@ Item {
         running: true
         repeat: true
 
-        onTriggered: {
-            weatherProcess.running = true
-        }
+        onTriggered: weatherProcess.running = true
     }
 
-    Component.onCompleted: {
-        weatherProcess.running = true
-    }
+    Component.onCompleted: weatherProcess.running = true
 
     Image {
         id: weatherIcon

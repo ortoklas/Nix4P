@@ -1,4 +1,17 @@
 #!/usr/bin/env bash
 
-curl -s "https://api.open-meteo.com/v1/forecast?latitude=41.25&longitude=-87.75&current=temperature_2m,weather_code&temperature_unit=fahrenheit" \
-    | jq -r '.current.temperature_2m'
+#
+# Nix4P Weather
+#
+# Change STATION to your nearest weather station.
+#
+# Examples:
+#   KORD  Chicago O'Hare
+#   KJFK  New York JFK
+#   EGLL  London Heathrow
+#   EDDF  Frankfurt
+#
+
+STATION="KORD"
+
+curl -fsS "https://wttr.in/${STATION}?format=%t" || echo "--"
