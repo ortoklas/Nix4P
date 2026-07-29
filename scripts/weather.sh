@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
 
-#
-# Nix4P Weather
-#
-# Change STATION to your nearest weather station.
-#
-# Examples:
-#   KORD  Chicago O'Hare
-#   KJFK  New York JFK
-#   EGLL  London Heathrow
-#   EDDF  Frankfurt
-#
+CITY="Chicago+O'Hare"
 
-STATION="KORD"
+temp=$(curl -fsS "https://wttr.in/${CITY}?format=%t" 2>/dev/null)
 
-curl -fsS "https://wttr.in/${STATION}?format=%t" || echo "--"
+# Fallback if wttr.in returns bad data
+case "$temp" in
+    ""|"Unknown location"|"-1766°F")
+        echo "--"
+        ;;
+    *)
+        echo "$temp"
+        ;;
+esac

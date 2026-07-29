@@ -16,36 +16,40 @@ Item {
         id: weatherProcess
 
         command: [
-            "/home/highv/.config/home-manager/scripts/weather.sh"
+            "cat",
+            "/home/highv/.cache/nix4p/weather"
         ]
 
         stdout: StdioCollector {
             onStreamFinished: {
-                root.temperature = text.trim()
+                var result = text.trim()
+
+                if (result !== "")
+                    root.temperature = result
             }
         }
     }
 
     Timer {
-        interval: 900000
+        interval: 5000
         running: true
         repeat: true
 
         onTriggered: weatherProcess.running = true
     }
 
-    Component.onCompleted: weatherProcess.running = true
+    Component.onCompleted: {
+        weatherProcess.running = true
+    }
 
     Image {
-        id: weatherIcon
-
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
 
         source: "../assets/icons/weather-icons-23-svgrepo-com.svg"
 
-        width: 24
-        height: 24
+        width: 28
+        height: 28
 
         fillMode: Image.PreserveAspectFit
     }
@@ -65,8 +69,6 @@ Item {
     MouseArea {
         anchors.fill: parent
 
-        onClicked: {
-            console.log("Weather clicked")
-        }
+        onClicked: weatherProcess.running = true
     }
 }

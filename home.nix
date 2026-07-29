@@ -44,5 +44,34 @@
     };
   };
 
+  systemd.user.services.weather-updater = {
+    Unit = {
+      Description = "Nix4P Weather Updater";
+      After = [ "network-online.target" ];
+      Wants = [ "network-online.target" ];
+    };
+
+    Service = {
+      ExecStart = "${config.home.homeDirectory}/.config/home-manager/scripts/weather-updater.sh";
+      Restart = "always";
+      RestartSec = 10;
+    };
+
+    Install = {
+      WantedBy = [ "default.target" ];
+    };
+  };
+
+  systemd.user.services.quickshell-reload = {
+    Unit = {
+      Description = "Nix4P Quickshell Reload";
+    };
+
+    Service = {
+      Type = "oneshot";
+      ExecStart = "${config.home.homeDirectory}/.config/home-manager/scripts/quickshell-reload.sh";
+    };
+  };
+
   programs.home-manager.enable = true;
 }
