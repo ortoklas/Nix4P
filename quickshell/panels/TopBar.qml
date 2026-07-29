@@ -75,9 +75,6 @@ PanelWindow {
                 color: Theme.surfaceAlt
             }
 
-            // WEATHER
-            WeatherButton {
-            }
 
             // VOLUME
             VolumeButton {

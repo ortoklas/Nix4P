@@ -31,15 +31,9 @@ Rectangle {
 
     Process {
         id: reloadProcess
-
+    
         command: [
-            "/run/current-system/sw/bin/systemd-run",
-            "--user",
-            "--no-block",
-            "--quiet",
-            "/run/current-system/sw/bin/sh",
-            "-c",
-            "sleep 0.5; qs --daemonize"
+            "/home/highv/.config/home-manager/scripts/quickshell-reload.sh"
         ]
     }
 
