@@ -25,7 +25,8 @@ Nix4P is designed around a simple idea: provide a fast, organized, and easy-to-u
 
 ## Screenshots
 
-> Screenshots will be added before the v1.0 release.
+<img width="3840" height="2160" alt="FINAL 11" src="https://github.com/user-attachments/assets/d907b71b-f15c-42d7-98a7-67d60e700886" />
+
 
 ---
 
