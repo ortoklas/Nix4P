@@ -107,10 +107,6 @@ PanelWindow {
             KeybindsButton {
             }
 
-            // RELOAD QUICKSHELL
-            ReloadButton {
-            }
-
             // POWER
             PowerButton {
             }

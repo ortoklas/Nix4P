@@ -460,6 +460,33 @@ PanelWindow {
                 Layout.fillWidth: true
 
                 Text {
+                    text: "SUPER + SHIFT + R"
+
+                    color: Theme.text
+
+                    font.family: "JetBrainsMono Nerd Font"
+                    font.pixelSize: 11
+                    font.bold: true
+
+                    Layout.preferredWidth: 190
+                }
+
+                Text {
+                    text: "Reload Quickshell"
+
+                    color: Theme.textMuted
+
+                    font.family: "JetBrainsMono Nerd Font"
+                    font.pixelSize: 13
+
+                    Layout.fillWidth: true
+                }
+            }
+            
+            RowLayout {
+                Layout.fillWidth: true
+
+                Text {
                     text: "SUPER + SHIFT + Q"
 
                     color: Theme.text

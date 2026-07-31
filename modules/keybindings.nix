@@ -19,6 +19,9 @@
       # Browser
       "$mod, B, exec, brave"
 
+      # Reload Quickshell
+      "$mod SHIFT, R, exec, ~/.config/home-manager/scripts/quickshell-reload.sh"
+
       # File Manager
       "$mod, E, exec, nemo"
 
