@@ -61,6 +61,16 @@ After the build finishes, log out and start a **Hyprland** session.
 
 ---
 
+## Reference Configuration
+
+Nix4P is primarily a **Home Manager** configuration.
+
+A reference `configuration.nix` is included in the `reference/` directory for anyone interested in seeing the accompanying NixOS system configuration used alongside this project.
+
+It is provided as an example and backup, and is **not required** to use Nix4P.
+
+---
+
 # Repository Layout
 
 ```text
