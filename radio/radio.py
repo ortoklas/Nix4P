@@ -47,6 +47,7 @@ def notify(name):
             "notify-send",
             "-a",
             "Nix4P Radio",
+            "-u", "low",
             "📻 Radio",
             name,
         ],

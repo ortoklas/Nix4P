@@ -24,3 +24,20 @@ RdMix Classic Rock 70s 80s 90s|https://cast1.torontocast.com:4610/stream
 0N Deutsch Rock|https://0n-deutschrock.radionetz.de/0n-deutschrock.aac
 Austrian Rock Radio|http://live.antenne.at/arr
 Bad Rock Radio Hard Heavy|https://radio.jump.bg:7049/live
+Klassik Radio Meditation|https://stream.klassikradio.de/meditation/mp3-192/
+STR-Space travel Radio|https://spacetravelradio.de:2893/stream/2/
+Psychedelic Secrets Radio|https://stream.laut.fm/secrethits
+Psychedelic Jukebox|https://eagle.streemlion.com/proxy/psychedelicj
+Radio GR|http://proxima.shoutca.st:8157/stream
+psychedelic_goa_trance_pro_darkspy|https://stream.laut.fm/psychedelicgoatranceprodarkspy
+Radio Mirage SPACE|http://rm.radiomirage.org.es/
+1234.gr Radio|http://proxima.shoutca.st:8456/stream
+TranceBase.FM|https://mp3.stream.tb-group.fm/trb.mp3
+Dubai Sunset Radio|https://a8.asurahosting.com:6580/radio.mp3
+CYBERStacja.PL – EDM / House / Trance / Techno|https://sc.cyberstacja.pl/listen/cyberstacja/radio.mp3
+1.FM - Amsterdam Trance|http://www.1.fm/tunestream/atr/listen.pls
+World of Jazz|https://streams.greenhost.nl:8006/jazz
+NOSTALGIE BLUES|https://streaming.nrjaudio.fm/ou8ordgk7oiu
+Smooth Radio London|https://media-ssl.musicradio.com/SmoothLondonMP3
+Smooth Grooving FM|http://64.95.243.43:8020/
+

@@ -29,8 +29,8 @@
       "notification-2fa-action": true,
       "notification-inline-replies": false,
 
-      "timeout": 6,
-      "timeout-low": 3,
+      "timeout": 3,
+      "timeout-low": 1,
       "timeout-critical": 0,
 
       "widgets": [
