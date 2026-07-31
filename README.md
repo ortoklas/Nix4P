@@ -9,7 +9,6 @@
 ![Nix4P Screenshot](assets/screenshot.png)
 
 ---
-<img width="3840" height="2160" alt="FINAL 11" src="https://github.com/user-attachments/assets/2cdd60b0-182f-48f5-9fb4-18f07321bbfb" />
 
 ## Welcome
 
