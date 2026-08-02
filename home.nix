@@ -53,4 +53,21 @@
   home.file.".local/bin/radio-toggle".source = ./scripts/radio-toggle;
   home.file.".local/bin/radio-next".source = ./scripts/radio-next;
   home.file.".local/bin/radio-prev".source = ./scripts/radio-prev;
+
+  systemd.user.services.elephant = {
+    Unit = {
+      Description = "Elephant";
+      After = [ "graphical-session.target" ];
+    };
+
+    Service = {
+      ExecStart = "${pkgs.elephant}/bin/elephant";
+      Restart = "on-failure";
+    };
+
+    Install = {
+      WantedBy = [ "graphical-session.target" ];
+    };
+  };
+  
 }
