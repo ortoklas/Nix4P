@@ -23,6 +23,10 @@
     TERMINAL = "kitty";
   };
 
+  home.sessionPath = [
+    "$HOME/.local/bin"
+  ];
+
   services.udiskie = {
     enable = true;
     automount = true;
@@ -45,4 +49,8 @@
   };
 
   programs.home-manager.enable = true;
+
+  home.file.".local/bin/radio-toggle".source = ./scripts/radio-toggle;
+  home.file.".local/bin/radio-next".source = ./scripts/radio-next;
+  home.file.".local/bin/radio-prev".source = ./scripts/radio-prev;
 }
