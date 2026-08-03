@@ -11,6 +11,7 @@
     ./modules/quickshell.nix
     ./modules/swaync.nix
     ./modules/clipboard.nix
+    ./modules/waypaper.nix
   ];
 
   home.username = "highv";
