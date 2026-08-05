@@ -8,7 +8,9 @@
       font_family = "Geist Mono NF";
       font_size = 11;
 
-      background = "#1e1e1e";
+     #background = "#2b2b44";
+      background = "#1b1b2b";
+     #background = "#1e1e1e";
       foreground = "#ffffff";
 
       background_opacity = "0.85";
