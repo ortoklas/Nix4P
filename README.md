@@ -2,6 +2,11 @@
 
 > A simple Hyprland + Quickshell starting point for NixOS using Home Manager.
 
+
+![Nix4P Screenshot](assets/screenshot.png)
+
+---
+
 ---
 
 # Welcome
