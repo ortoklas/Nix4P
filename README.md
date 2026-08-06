@@ -1,20 +1,14 @@
-
 # Nix4P
-
-
 
 > A simple Hyprland + Quickshell starting point for NixOS using Home Manager.
 
-
-![Nix4P Screenshot](assets/screenshot.png)
-
 ---
 
-## Welcome
+# Welcome
 
-Nix4P is my personal Home Manager configuration that I'm sharing with the community...
+Nix4P is my personal Home Manager configuration that I'm sharing with the community.
 
-This repository is my personal Home Manager configuration that I'm sharing with the community. It was built as a clean starting point for anyone interested in trying **Hyprland** and **Quickshell** on **NixOS** without having to build everything from scratch.
+It was built as a clean starting point for anyone interested in trying **Hyprland** and **Quickshell** on **NixOS** without having to build everything from scratch.
 
 The goal isn't to provide hundreds of features or endless customization options. Instead, Nix4P focuses on providing a simple, organized configuration that is easy to understand, modify, and expand as you learn.
 
@@ -22,7 +16,26 @@ Whether this is your first Hyprland installation or you're simply looking for id
 
 ---
 
+# Features
+
+* Hyprland desktop configuration
+* Quickshell top bar
+* Wallpaper-based color customization
+* Kitty terminal setup
+* Custom keyboard shortcuts
+* Built-in keybind cheat sheet
+* Wayland screenshot workflow
+* Wallpaper management
+* Radio integration
+* Easy Home Manager customization
+
+---
+
 # Before You Begin
+
+Nix4P is a **Home Manager configuration for NixOS**.
+
+## Requirements
 
 You'll need:
 
@@ -35,33 +48,98 @@ If you don't already have Home Manager installed, complete that first before usi
 
 ---
 
-# Installation
+## Check Your Nix Versions
 
-Clone the repository into your Home Manager configuration directory.
+Nix4P has been tested on both stable and unstable NixOS channels.
+
+The important part is keeping **Nixpkgs** and **Home Manager** versions compatible.
+
+Check your current channels:
 
 ```bash
-git clone https://github.com/ortoklas/Nix4P.git ~/.config/home-manager
+nix-channel --list
 ```
 
-Move into the project directory.
+Example stable configuration:
+
+```text
+nixpkgs       https://nixos.org/channels/nixos-26.05
+home-manager  https://github.com/nix-community/home-manager/archive/release-26.05.tar.gz
+```
+
+Example unstable configuration:
+
+```text
+nixpkgs       https://nixos.org/channels/nixos-unstable
+home-manager  https://github.com/nix-community/home-manager/archive/master.tar.gz
+```
+
+After changing channels, update them:
 
 ```bash
+nix-channel --update
+```
+
+---
+
+## Check Your Username
+
+Before building, make sure the username in Nix4P matches your system user.
+
+Edit:
+
+```text
+home.nix
+```
+
+Example:
+
+```nix
+home.username = "your-user";
+home.homeDirectory = "/home/your-user";
+```
+
+Your NixOS system configuration should use the same username:
+
+```nix
+users.users.your-user = {
+  ...
+};
+```
+
+A mismatch between these values can cause Home Manager to build successfully but apply the configuration to the wrong user.
+
+---
+
+# Installation
+
+If you already have an existing Home Manager configuration, back it up first.
+
+Clone Nix4P:
+
+```bash
+cd ~/.config
+
+rm -rf ~/.config/home-manager
+
+git clone https://github.com/ortoklas/Nix4P.git ~/.config/home-manager
+
 cd ~/.config/home-manager
 ```
 
-Build and activate the configuration.
+Edit `home.nix` and update the username if needed.
+
+Build and activate:
 
 ```bash
 home-manager switch
 ```
 
-Home Manager will build the configuration and install everything defined by Nix4P.
-
 After the build finishes, log out and start a **Hyprland** session.
 
 ---
 
-## Reference Configuration
+# Reference Configuration
 
 Nix4P is primarily a **Home Manager** configuration.
 
@@ -78,16 +156,17 @@ It is provided as an example and backup, and is **not required** to use Nix4P.
 ├── home.nix
 ├── modules/
 ├── quickshell/
+├── scripts/
+├── radio/
 ├── wallpapers/
 ├── assets/
+├── docs/
 └── README.md
 ```
 
 ---
 
 # Where Do I Edit Things?
-
-One of the biggest advantages of Home Manager is knowing where everything lives.
 
 | I want to...               | Edit this file                 |
 | -------------------------- | ------------------------------ |
@@ -105,43 +184,45 @@ One of the biggest advantages of Home Manager is knowing where everything lives.
 
 # Applying Changes
 
-After editing any configuration file:
-
-Save the file.
-
-Then rebuild your Home Manager configuration.
+After editing configuration files:
 
 ```bash
 home-manager switch
 ```
 
-Most changes will be applied automatically.
+Most Home Manager changes will be applied after rebuilding.
 
-If you're working on Quickshell, use the Quickshell reload keyboard shortcut from the cheat sheet after making changes.
+Some graphical components, such as Quickshell, may require a restart.
 
 ---
 
-# Useful Git Commands
+# Updating Nix4P
 
-Check your changes.
-
-```bash
-git status
-```
-
-Download updates.
+Download the latest changes:
 
 ```bash
+cd ~/.config/home-manager
 git pull
 ```
 
-Commit your own work.
+Review changes before rebuilding:
 
 ```bash
-git add .
-git commit -m "Describe your changes"
-git push
+home-manager switch
 ```
+
+---
+
+# Troubleshooting
+
+If something does not work after installation, check:
+
+* Your username in `home.nix` matches your actual user.
+* Your NixOS and Home Manager versions are compatible.
+* Your channels are updated.
+* You rebuilt Home Manager after making changes.
+
+For Quickshell changes, restart Quickshell or use the reload shortcut from the built-in keybind cheat sheet.
 
 ---
 
@@ -171,7 +252,7 @@ Try changing:
 * the Quickshell top bar
 * installed packages
 
-After each change, rebuild using:
+After each change:
 
 ```bash
 home-manager switch
@@ -203,7 +284,7 @@ Have fun.
 
 ---
 
-## Acknowledgements
+# Acknowledgements
 
 A sincere thank you to the developers and communities behind:
 
