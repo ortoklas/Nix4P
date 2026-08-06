@@ -25,8 +25,9 @@ Whether this is your first Hyprland installation or you're simply looking for id
 * Custom keyboard shortcuts
 * Built-in keybind cheat sheet
 * Wayland screenshot workflow
-* Wallpaper management
+* Wallpaper management through Home Manager and Waypaper
 * Radio integration
+* Elephant service integration
 * Easy Home Manager customization
 
 ---
@@ -113,7 +114,7 @@ A mismatch between these values can cause Home Manager to build successfully but
 
 # Installation
 
-If you already have an existing Home Manager configuration, back it up first.
+If you already have an existing Home Manager configuration, make sure it is backed up before continuing.
 
 Clone Nix4P:
 
@@ -143,9 +144,11 @@ After the build finishes, log out and start a **Hyprland** session.
 
 Nix4P is primarily a **Home Manager** configuration.
 
-A reference `configuration.nix` is included in the `reference/` directory for anyone interested in seeing the accompanying NixOS system configuration used alongside this project.
+A reference `configuration.nix` is included in the `reference/` directory.
 
-It is provided as an example and backup, and is **not required** to use Nix4P.
+It shows the NixOS system configuration used during testing and provides an example of the system-level setup that works well with Nix4P.
+
+It is provided as a reference and backup, and is **not required** to use Nix4P.
 
 ---
 
@@ -158,6 +161,7 @@ It is provided as an example and backup, and is **not required** to use Nix4P.
 ├── quickshell/
 ├── scripts/
 ├── radio/
+├── reference/
 ├── wallpapers/
 ├── assets/
 ├── docs/
@@ -205,7 +209,7 @@ cd ~/.config/home-manager
 git pull
 ```
 
-Review changes before rebuilding:
+Apply the updates:
 
 ```bash
 home-manager switch
@@ -221,6 +225,7 @@ If something does not work after installation, check:
 * Your NixOS and Home Manager versions are compatible.
 * Your channels are updated.
 * You rebuilt Home Manager after making changes.
+* You are using the correct branch (`main`) when cloning the repository.
 
 For Quickshell changes, restart Quickshell or use the reload shortcut from the built-in keybind cheat sheet.
 
